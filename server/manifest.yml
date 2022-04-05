@@ -3,9 +3,9 @@
     routes:
       - route: $HOST.$DOMAIN
     memory: 128M
-     buildpacks: python_buildpack
+    buildpacks: python_buildpack
   - name: djangoapp-nginx
     routes:
       - route: $HOST.$DOMAIN/static
     memory: 128M
-     buildpacks: staticfile_buildpack
+    buildpacks: staticfile_buildpack
