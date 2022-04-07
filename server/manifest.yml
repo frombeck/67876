@@ -1,13 +1,13 @@
   applications:
   - name: djangoapp
     routes:
-      - route: $HOST.$DOMAIN
+      - route: https://cardjang.us-south.cf.appdomain.cloud
     memory: 128M
     buildpacks: 
       - https://github.com/cloudfoundry/python-buildpack.git
   - name: djangoapp-nginx
     routes:
-      - route: $HOST.$DOMAIN/static
+      - route: https://cardjang.us-south.cf.appdomain.cloud/static
     memory: 128M
     buildpacks:
       - https://github.com/cloudfoundry/staticfile-buildpack.git
