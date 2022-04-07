@@ -1,7 +1,6 @@
   applications:
   - name: djangoapp
-    routes:
-      - route: https://config.cloud-object-storage.cloud.ibm.com
+    random-route: true
     memory: 128M
     buildpacks: 
       - https://github.com/cloudfoundry/python-buildpack.git
