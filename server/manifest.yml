@@ -1,6 +1,6 @@
   applications:
   - name: djangoapp
-    domain: cfapps.io
+    
     no-route: true
     memory: 128M
     buildpacks: 
