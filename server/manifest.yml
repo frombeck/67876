@@ -1,11 +1,11 @@
   applications:
   - name: djangoapp
-    random-route: true
+    routes:
+      - route: $HOST.$DOMAIN
     memory: 128M
-    buildpacks: 
-      - https://github.com/cloudfoundry/python-buildpack.git
+    buildpack: python_buildpack
   - name: djangoapp-nginx
-
+    routes:
+      - route: $HOST.$DOMAIN/static
     memory: 128M
-    buildpacks:
-      - https://github.com/cloudfoundry/staticfile-buildpack.git
+    buildpack: staticfile_buildpack
