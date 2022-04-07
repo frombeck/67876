@@ -4,10 +4,10 @@
       - route: $HOST.$DOMAIN
     memory: 128M
     buildpacks: 
-      -python_buildpack
+      -https://github.com/cloudfoundry/python-buildpack.git
   - name: djangoapp-nginx
     routes:
       - route: $HOST.$DOMAIN/static
     memory: 128M
     buildpacks:
-      -staticfile_buildpack
+      -https://github.com/cloudfoundry/staticfile-buildpack.git
