@@ -2,7 +2,9 @@ applications:
  - name: GetStartedPython
    random-route: true
    memory: 128M
-   buildpacks: https://github.com/cloudfoundry/python-buildpack.git
+   buildpacks: 
+   - https://github.com/cloudfoundry/python-buildpack.git
  - name: djangoapp-nginx
    memory: 128M
-   buildpacks: https://github.com/cloudfoundry/staticfile-buildpack.git
+   buildpacks:
+   - https://github.com/cloudfoundry/staticfile-buildpack.git
